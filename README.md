@@ -43,7 +43,7 @@ You can follow the instructions [here](https://docs.ansible.com/ansible/latest/i
 For macOS, it is as simple as entering `brew install ansible`
 
 ## Running the script
-Now that you are setup, you can go ahead and run the ansible playbook by using:
+Now that you are setup, you can go ahead and run the ansible playbook going to the project's root directory and typing the following into the terminal:
 
 `ansible-playbook ./playbooks/install.yml --user <YOUR_UBUNTU_VM_USERNAME_HERE> --ask-pass --ask-become-pass -i ./inventory/hosts`
 
