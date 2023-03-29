@@ -1,0 +1,29 @@
+- hosts: '*'
+  tasks:
+    - name: Update Packages
+      apt:
+        update_cache: yes
+        upgrade: 'yes'
+      become: yes
+    
+    - name: Install Packges
+      apt:
+        name: "{{ item }}"
+        state: latest
+        update_cache: true
+      loop:
+        - nmap
+        - tshark
+        - vim
+        - curl
+        - unzip
+        - npm
+        - nodejs
+      become: yes
+    
+    - name: Install Volatility
+      shell: |
+        git clone https://github.com/volatilityfoundation/volatility3.git
+        cd volatility3
+        pip3 install -r requirements.txt
+      become: yes
