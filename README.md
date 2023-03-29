@@ -10,6 +10,10 @@
 ## Overview
 This project allows for people to install basic tools we learned in class on a new ubuntu vm
 
+NOTE: Ansible is **NOT** supported on Windows natively
+
+It is though supported on macOS and most Linux distros
+
 ## Setup
 
 ### Installing Ubuntu
@@ -21,7 +25,7 @@ This project allows for people to install basic tools we learned in class on a n
 - Then type `ipconfig`
 
 ### Hosts
-- Clone this repo
+- Clone this repo and go to the root directory of the project
 - Open `inventory/hosts`
 - Replace `PUT IP ADDRESS OF VM HERE` with the IP of your VM
 
@@ -33,8 +37,6 @@ It is likely that you will need to install `sshpass` on your host system, a pack
     - `brew install esolitos/ipa/sshpass`
 - On Ubuntu:
     - `sudo apt install sshpass`
-- On Windows:
-    - ??
 
 ## Installing Ansible
 
