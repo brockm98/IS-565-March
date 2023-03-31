@@ -1,11 +1,13 @@
 - hosts: '*'
   tasks:
+    # Update all common packages in the system
     - name: Update Packages
       apt:
         update_cache: yes
         upgrade: 'yes'
       become: yes
     
+    # Install some common cybersecurity packages
     - name: Install Packges
       apt:
         name: "{{ item }}"
@@ -21,6 +23,7 @@
         - nodejs
       become: yes
     
+    # Clone the github repo for volatility
     - name: Install Volatility
       shell: |
         git clone https://github.com/volatilityfoundation/volatility3.git
