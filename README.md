@@ -53,3 +53,13 @@ It will prompt for you to enter a SSH password and a BECOME root password. This 
 
 Once this is done, it will run the playbook
 
+## Finishing Steps
+
+Verify apps installed successfully
+
+For example,
+
+If you type `nmap`, it should show something along these lines
+
+![NMAP](./screenshots/nmap.png)
+
