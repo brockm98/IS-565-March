@@ -1,8 +1,8 @@
-# IS 565 February Creation
+# IS 565 March Creation
 
 ## Team Members
 - Brock May
-- David Holdstock
+- Davis Holdstock
 - Josh Snyder
 - Joseph Curtis
 - Tucker Weibell
